@@ -1,0 +1,104 @@
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background: #fff;
+  text-align: center;
+}
+
+header {
+  padding: 16px;
+  position: relative;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.brand-title {
+  font-size: 20px;
+  color: #6680c2;
+  flex-grow: 1;
+  margin: 0 12px;
+  text-align: left;
+}
+
+.menu-toggle {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+.history-section {
+  padding: 2rem 1rem;
+}
+.history-section button:hover{
+  transform: scale(1.05);
+  transition: all 0.3s ease-in;
+}
+
+.explore-title {
+  font-size: 2rem;
+  color: #004b4b;
+  margin-bottom: 1.5rem;
+}
+
+.primary-btn {
+  background: #5466f9;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 18px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 320px;
+  cursor: pointer;
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.note-text {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.history-img {
+  margin-top: 2rem;
+}
+
+.history-img img {
+  width: 100%;
+  max-width: 340px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .brand-title {
+    font-size: 24px;
+  }
+
+  .primary-btn {
+    font-size: 20px;
+  }
+
+  .top-bar {
+    margin: 0 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .brand-title {
+    font-size: 28px;
+  }
+
+  .top-bar {
+    margin: 0 8rem;
+  }
+}

@@ -1,0 +1,77 @@
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background: #fff;
+  text-align: center;
+}
+
+
+.explore-section {
+  padding: 2rem 1rem;
+}
+
+.explore-title {
+  font-size: 2rem;
+  color: #004b4b;
+  margin-bottom: 2rem;
+}
+
+.features-box {
+  background: #b3b3b3;
+  padding: 24px 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 2px solid black;
+}
+.features-box button:hover{
+  transform: scale(1.05);
+  transition: all 0.3s ease-in;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.feature-list li span {
+  margin-left: 8px;
+}
+
+
+.primary-btn {
+  background: #5466f9;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 18px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 320px;
+  cursor: pointer;
+}
+
+.note-text {
+  margin-top: 24px;
+  font-size: 16px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .primary-btn {
+    font-size: 20px;
+  }
+}

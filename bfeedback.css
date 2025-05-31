@@ -1,0 +1,134 @@
+body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      background: #fff;
+      text-align: center;
+    }
+
+    header {
+      padding: 16px;
+      position: relative;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 1.5rem;
+    }
+
+    .logo {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    .brand-title {
+      font-size: 20px;
+      color: #6680c2;
+      flex-grow: 1;
+      margin: 0 12px;
+      text-align: left;
+    }
+
+    .menu-toggle {
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    
+    .feedback-section {
+      padding: 2rem 1rem;
+    }
+
+    .explore-title {
+      font-size: 28px;
+      color: #004b4b;
+      margin-bottom: 1.5rem;
+    }
+
+    .feedback-box {
+      background: #b3b1b1;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto 2rem;
+      border: 2px solid black;
+      
+    }
+
+    .feedback-box form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      text-align: left;
+      
+    }
+
+    .feedback-box label {
+      font-weight: 600;
+    }
+
+    .feedback-box input,
+    .feedback-box textarea {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      width: 100%;
+    }
+
+    .primary-btn {
+      background: #5466f9;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 200px;
+      margin: 16px auto 0;
+      cursor: pointer;
+      display: block;
+    }
+
+    .note-text {
+      font-size: 18px;
+      color: #004b4b;
+      font-weight: 500;
+    }
+
+    
+    @media screen and (min-width: 768px) {
+      .brand-title {
+        font-size: 24px;
+      }
+
+      .feedback-box {
+        max-width: 480px;
+      }
+
+      .primary-btn {
+        font-size: 20px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      .top-bar {
+        margin: 0 8rem;
+      }
+
+      .brand-title {
+        font-size: 28px;
+      }
+
+      .feedback-box {
+        max-width: 520px;
+      }
+
+      .primary-btn {
+        max-width: 240px;
+      }
+    }

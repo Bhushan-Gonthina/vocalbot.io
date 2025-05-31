@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Learn with BUJJI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore Now</title>
+  <link rel="stylesheet" href="bupgrade.css">
   <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-  <header>
+   <header>
     <div class="top-bar">
       <img src="bujjilogo.png" alt="Bujji Logo" class="logo" />
       <nav class="nav-links desktop">
-        <a href="#">Home</a>
-        <a href="bupgrade.html">Upgrade</a>
+        <a href="index.html">Home</a>
+        <a href="#">Upgrade</a>
         <a href="bhistory.html">History</a>
         <a href="bfeedback.html">Feedback</a>
         <a href="blogin.html">Signin/Up</a>
@@ -24,28 +25,34 @@
       <div class="side-menu-header">
         <span id="closeMenu">❎</span>
       </div>
-      <a href="#"><span>‹</span> Home</a>
-      <a href="bupgrade.html"><span>‹</span> Upgrade</a>
+      <a href="index.html"><span>‹</span> Home</a>
+      <a href="#"><span>‹</span> Upgrade</a>
       <a href="bhistory.html"><span>‹</span> History</a>
       <a href="bfeedback.html"><span>‹</span> Feedback</a>
       <a href="blogin.html"><span>‹</span> Signin/Up</a>
     </nav>
   </header>
 
-  <main>
-    <div class="learn"></div>
-    <div class="avatar-container">
-        <h1 class="brand-title">Learn With BUJJI</h1>
-      <img src="girl.png" alt="Girl Avatar" class="avatar" />
-    </div>
-    <div class="button-group">
-      <button class="primary-btn" onclick="window.location.href='bujjiui.html'" >let’s go!!</button>
-      <button class="secondary-btn" onclick="window.location.href='bujjiui.html'" >Skip Quick Chat</button>
-    </div>
-  </main>
+  <section class="explore-section">
+    <h2 class="explore-title">Explore Now</h2>
 
-  <script>
+    <div class="features-box">
+      <ul class="feature-list">
+        <li>✅ <span>Unlimited Conversations</span></li>
+        <li>✅ <span>20+ Language Support</span></li>
+        <li>✅ <span>GPT-4.5 AI Model</span></li>
+        <li>✅ <span>Multiple Voice Style</span></li>
+        <li>✅ <span>Conversion History</span></li>
+        <li>✅ <span>Export Transcripts</span></li>
+      </ul>
+      <button class="primary-btn">Get Free Trail</button>
+    </div>
 
+    <p class="note-text" mark>
+      <span style="background-color: red; color:white">Note: </span>If You Don’t Loke This Plan, You Can Cancel The Plan Anytime
+    </p>
+  </section>
+   <script>
     const toggle = document.getElementById('menuToggle');
     const sideMenu = document.getElementById('sideMenu');
     const closeMenu = document.getElementById('closeMenu');
@@ -54,4 +61,5 @@
     closeMenu.onclick = () => sideMenu.classList.remove('open');
   </script>
 </body>
+
 </html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="index.css"/>
+  <link rel="stylesheet" href="blogin.css">
+</head>
+<body>
+
+ <header>
+    <div class="top-bar">
+      <img src="bujjilogo.png" alt="Bujji Logo" class="logo" />
+      <nav class="nav-links desktop">
+        <a href="index.html">Home</a>
+        <a href="bupgrade.html">Upgrade</a>
+        <a href="bhistory.html">History</a>
+        <a href="bfeedback.html">Feedback</a>
+        <a href="#">Signin/Up</a>
+      </nav>
+      <div class="menu-toggle mobile" id="menuToggle">&#9776;</div>
+    </div>
+
+    <nav class="side-menu" id="sideMenu">
+      <div class="side-menu-header">
+        <span id="closeMenu">❎</span>
+      </div>
+      <a href="index.html"><span>‹</span> Home</a>
+      <a href="bupgrade.html"><span>‹</span> Upgrade</a>
+      <a href="bhistory.html"><span>‹</span> History</a>
+      <a href="bfeedback.html"><span>‹</span> Feedback</a>
+      <a href="#"><span>‹</span> Signin/Up</a>
+    </nav>
+  </header>
+
+  
+  <section>
+    <h2 class="login-title">Login</h2>
+
+    <div class="login-box">
+      <form>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password" required />
+
+        <div class="signup">
+          You Don’t Have Any Account ? <a href="#">Create Account</a>
+        </div>
+         <button type="submit" class="login-submit">LogIn</button>
+
+        <div class="or-text"></div>
+
+        <button type="button" class="social-btn">
+          <img src="https://img.icons8.com/color/48/google-logo.png" alt="Google"/> Login With Google
+        </button>
+
+        <button type="button" class="social-btn">
+          <img src="https://img.icons8.com/color/48/facebook.png" alt="Facebook"/> Login With Facebook
+        </button>
+
+        <button type="button" class="social-btn">
+          <img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub"/> Login With GitHub
+        </button>
+
+       
+      </form>
+    </div>
+  </section>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const sideMenu = document.getElementById('sideMenu');
+    const closeMenu = document.getElementById('closeMenu');
+
+    toggle.onclick = () => sideMenu.classList.add('open');
+    closeMenu.onclick = () => sideMenu.classList.remove('open');
+  </script>
+
+</body>
+</html>
